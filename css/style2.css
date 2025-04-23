@@ -1,0 +1,124 @@
+/*Geral*/
+body {
+  background-color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+a {
+  color: #21243d;
+  text-decoration: none;
+}
+
+html {
+  font-size: calc(15px + 0.390625vw);
+}
+
+p {
+  line-height: 120%;
+}
+
+section h2 {
+  text-align: center;
+  margin: 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*Header*/
+
+header ul li {
+  text-align: center;
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+
+section.banner {
+  text-align: center;
+  padding: 0 5% 5%;
+}
+
+section.banner h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 10px 0 10px 0;
+}
+
+section.banner button {
+  margin: 10px 0 10px 0;
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff6464;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*Especifico*/
+
+section.featwork h1 {
+  font-size: 2rem;
+  margin: 10px 0 10px 0;
+  color: #21243d;
+  padding: 10px 15px 10px 15px;
+}
+
+section.featwork h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #21243d;
+}
+
+section.featwork p.info {
+  margin: 10px 0 10px 0;
+  color: #21243d;
+  padding: 10px 15px 10px 15px;
+}
+
+section.featwork p.info span {
+  background-color: #ff7c7c;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+section.featwork p {
+  margin: 10px 0 10px 0;
+  color: #21243d;
+  padding: 10px 15px 10px 15px;
+}
+
+section.featwork2 h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #21243d;
+  margin: 10px 0 10px 0;
+  padding: 10px 15px 10px 15px;
+}
+
+section.featwork2 h4 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #21243d;
+  padding: 10px 15px 10px 15px;
+}
+
+section.featwork2 p {
+  margin: 10px 0 10px 0;
+  color: #21243d;
+  padding: 10px 15px 10px 15px;
+}
+/*Footer*/
+
+footer p.social a {
+  text-align: center;
+  font-size: 2.3rem;
+  margin: 10px 15px 10px 15px;
+}
+
+footer p {
+  text-align: center;
+}

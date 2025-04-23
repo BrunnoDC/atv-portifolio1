@@ -1,72 +1,192 @@
-
+/*Geral*/
 body {
-    color: #21243D;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 a {
-    text-decoration: none;
-    color: #21243D;
+  color: #21243d;
+  text-decoration: none;
 }
 
-header ul li {
-    text-align: center;
-    padding: 10px 0 10px 0;
-
+html {
+  font-size: calc(15px + 0.390625vw);
 }
 
 p {
-    line-height: 130%;
+  line-height: 120%;
 }
 
-section.banner img {
-    width: 243;
-    height: 243;
-    top: 210px;
-    left: 760px;
+img {
+  max-width: 100%;
+}
 
+/*Header*/
+
+header ul li {
+  text-align: center;
+  padding: 10px 10px;
+  margin: 10px 10px;
 }
 
 section.banner {
-    text-align: center;
-    padding: 0 5% 0 5%;
-
+  text-align: center;
+  padding: 0 5% 5%;
 }
 
 section.banner h1 {
-    font-weight: bold;
-    font-size: 2rem;
-    margin: 10px 0 10px 0;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 10px 0 10px 0;
 }
 
-section.banner p button {
-    background-color: #FF6464;
-    color: #ffffff;
-    border: none;
-    display: inline-block;
-    margin: 10px;
-    padding: 5px 10px;
-
+section.banner button {
+  margin: 10px 0 10px 0;
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff6464;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
+
+/*Especifico*/
 
 section.posts {
-    background-color: #EDF7FA;
-    padding: 10px;
-}
-
-section.posts h2{
-    text-align: center;
-    margin: 15px;
+  background-color: #edf7fa;
+  padding: 10px;
 }
 
 section.posts ul li {
-    background-color: #ffffff;
-    padding: 15px;
-    margin: 12px 10px 12px 10px;
+  background-color: white;
+  padding: 15px;
+  margin: 12px 10px 12px 10px;
+  border-radius: 10px;
 }
 
 section.posts ul li h3 {
-    font-weight: bold;
-    font-size: 1,2rem;
-    
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 20px;
+}
+
+section.posts ul li p {
+  font-size: 0.8rem;
+  margin: 20px;
+}
+
+section.works {
+  padding: 20px 10px 20px 10px;
+}
+
+section.works ul li {
+  padding: 15px 0;
+}
+
+section.works ul li h3 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 130%;
+  margin: 15px 0 15px 0;
+}
+
+section.works ul li p.info {
+  color: #8695a4;
+  margin: 15px 0 15px 0;
+}
+
+section.works ul li p.info span {
+  background-color: #142850;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+section.works ul {
+  border-bottom: 1px solid grey;
+}
+
+footer p.social a {
+  text-align: center;
+  font-size: 2.3rem;
+  margin: 10px 15px 10px 15px;
+}
+
+footer p {
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  header ul {
+    display: flex;
+    justify-content: right;
+  }
+
+  header ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  section.banner {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+    margin: 5vw 10vw;
+  }
+
+  section.banner.imagem {
+    margin-left: 7vw;
+  }
+
+  section.posts h2 {
+    text-align: left;
+  }
+
+  section.posts {
+    padding: 5vw 10vw 5vw 10vw;
+  }
+
+  section.posts ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  section.posts h2 {
+    font-size: 30px;
+    margin: 15px;
+  }
+
+  section.works h2 {
+    text-align: left;
+    font-size: 40px;
+  }
+
+  section.works {
+    padding: 5vw 10vw 5vw 10vw;
+  }
+
+  section.works ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  section.works ul,
+  section.posts ul {
+    display: flex;
+    flex-direction: space-between;
+  }
+
+  section.works ul li {
+    width: 80%;
+  }
+
+  section.works ul li img {
+    width: 80%;
+  }
+
+  section.works ul {
+    border: none;
+  }
 }
